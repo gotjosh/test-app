@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.13'
-gem 'sqlite3'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
@@ -15,6 +14,7 @@ end
 group :development, :test do
   gem 'html2haml'
   gem 'rspec-rails'
+  gem 'sqlite3'
   gem 'database_cleaner'
   gem 'email_spec'
   gem 'rspec-rails'

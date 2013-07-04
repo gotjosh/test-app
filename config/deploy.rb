@@ -1,5 +1,5 @@
 set :application, "myapp"
-set :repository,  "git@github.com:gotjosh/test-app.git"
+set :repository,  "https://github.com/gotjosh/test-app.git"
 set :branch, "master"
 set :keep_releases, 5
 
@@ -40,7 +40,7 @@ after "deploy:restart", "deploy:cleanup"
 # Server specific
 # ----------------
 set :user, "deploy"
-server "testbox", :web, :app, :db, :primary => true
+server "do-shop", :web, :app, :db, :primary => true
 set :deploy_to, "/home/apps/#{application}"
 set :rails_env, "production"
 
